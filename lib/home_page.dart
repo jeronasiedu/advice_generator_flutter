@@ -64,17 +64,16 @@ class _HomePageState extends State<HomePage> {
                     Padding(
                       padding: const EdgeInsets.only(bottom: 15),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Icon(Icons.format_quote),
-                          Expanded(
-                            child: Text(
-                              "Advice #${initialAdvice.id}",
-                              textAlign: TextAlign.center,
-                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                                    color: Theme.of(context).colorScheme.secondary,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                            ),
+                          Text(
+                            "Advice #${initialAdvice.id}",
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                                  color: Theme.of(context).colorScheme.secondary,
+                                  fontWeight: FontWeight.bold,
+                                ),
                           ),
                           const Icon(Icons.format_quote),
                         ],
